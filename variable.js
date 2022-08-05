@@ -4,7 +4,7 @@
 'use strict';
 
 
-// 2. Variable
+// 2. Variable, rw(read/Write)
 // let (added in ES6)
 let globalName = 'global name';
 {
@@ -27,14 +27,20 @@ console.log(globalName);
 console.log(age);
 
 
-// 3. constant
+// 3. constant, r(read only)
+// use const whenever possible.
+// only use let if variable needs to change.
+const daysInWeek = 7;
+const maxNumber = 5;
+
+
+// Note!
+// Immutable data types: permitive types, frozen objects (i.e. object.freeze())
+// Mutable data types: all objects by default are mutable in JS
 // favor immutable data type always for a few reason:
 // - security
 // - thread safety
 // - reduce human mistakes
-const daysInWeek = 7;
-const maxNumber = 5;
-
 
 // 4. Variable types
 // primitive single item: number, string, boolean, null, undefined,symbol
