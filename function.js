@@ -157,5 +157,27 @@ const simpleMultiply = (a, b) => {
 // Fun quiz
 // function calculate(command, a, b)
 // command: add, substract, divide, multiply, remainder
+function calculate(command, a, b) {
+    switch (command) {
+        case 'add':
+            return a + b;
+            break;
+        case 'substract':
+            return a - b;
+            break;
+        case 'divide':
+            return a / b;
+            break;
+        case 'multiply':
+            return a * b;
+            break;
+        case 'remainder':
+            return a % b;
+            break;
+        default:
+            throw Error('unknown command!');
+    }
+}
 
+console.log(calculate('substract', 2, 9));
 
