@@ -1,0 +1,27 @@
+출처) https://blog.nachal.com/1666
+
+
+1. Git Portable 다운로드 및 환경설정
+
+  1-1) 파일다운 : https://git-scm.com/download/win
+
+  1-2) 압축해제 : D:\PortableGit
+
+  1-3) 환경설정 : setx path "%path%;D:\PortableGit\bin" -m
+
+2. Git SSL 인증서 설정
+
+  2-1) git config 명령어 입력
+  CMD> git --version
+  git version 2.37.1.windows.1
+  CDM> git config --global https.sslCAInfo D:\PortableGit\mingw64\ssl\certs\ca-bundle.crt
+
+3. Git 접속
+  - https://github.com/no1rain/JavaScript.git
+
+
+
+
+- Git SSL 인증서 설정 - Github나 Gitlab을 이용할때 인증서가 있어야 로그인 할 수 있습니다.
+
+- Git Path 설정 - 패스설정을 해줘야 다른 프로그램이나 커맨드창에서 Git을 사용할 수 있게 됩니다.
