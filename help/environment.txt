@@ -29,3 +29,6 @@ P.S
 echo 명령어를 사용하면 %%를 이용하여 모든 환경변수 내용을 확인할 수 있다.
 
 ex) echo %os%
+
+적용예)
+setx path "%path%;D:\PortableGit\bin" -m
