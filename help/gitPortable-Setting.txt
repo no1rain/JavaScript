@@ -9,14 +9,23 @@
 
   1-3) 환경설정 : setx path "%path%;D:\PortableGit\bin" -m
 
-2. Git SSL 인증서 설정
+2. Git 사용자 정보 (Git을 설치하고 나서 가장 먼저 해야 하는 것은 사용자이름과 이메일 주소를 설정하는 것이다. Git은 커밋할 때마다 이 정보를 사용한다. 한 번 커밋한 후에는 정보를 변경할 수 없다.)
 
-  2-1) git config 명령어 입력
+  2-1) 설정확인
+  $ git config --list
+
+  2-2) 사용자 정보 추가
+  $ git config --global user.name "no1rain"
+  $ git config --global user.email "no1rain@gmail.com"
+
+3. Git SSL 인증서 설정
+
+  3-1) git config 명령어 입력
   CMD> git --version
   git version 2.37.1.windows.1
   CDM> git config --global https.sslCAInfo D:\PortableGit\mingw64\ssl\certs\ca-bundle.crt
 
-3. Git 접속
+4. Git 접속
   - https://github.com/no1rain/JavaScript.git
 
 
