@@ -6,5 +6,12 @@
                 'Install Now'로 설치 시 경로가 C:\Users\사용자계정\AppData\Local\Programs\Python\Python39 로 설정된다.
 
                 체크사항: install launcher for all user(모든 윈도우 사용자 사용) 선택
-                          Add Python 3.9 to PATH 선택
+                          Add Python 3.10 to PATH 선택
+
+2. Path 설정
+  1-2) 체크사항의 'Add Python 3.10 to PATH' 체크 하지 않은 경우 
+  2-1) '환경 변수' > 사용자 변수 > Path 제일 상단에 작성
+       C:\Program Files\Python310\Scripts\ 
+       C:\Program Files\Python310\
+  2-2) setx Path "C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;%Path%"
 
