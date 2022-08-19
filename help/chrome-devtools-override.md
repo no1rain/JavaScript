@@ -1,10 +1,10 @@
-# DevTools Overrides
+# Chrome DevTools Overrides
 
 Chrome Devtools(개발자도구)에는 더 쉽고 빠르게 테스트, 디버깅 및 개발하는 데 도움이 되는 많은 도구가 포함되어 있다.
 
 개발자가 익숙하지 않거나 자주 사용하지 않는 기능이 많이 있다. 이러한 기능 중 하나가 Overrides(재정의)이다.
 
-## What is Overrides: 재정의란?
+## What is Overrides재정의란?
 
 Overrides는 웹사이트의 모든 자산을 재정의하고 Javascript 또는 CSS 파일과 같은 자산을 변경할 수 있도록 도와주는 devtools의 기능이다.
 
@@ -12,7 +12,7 @@ Overrides는 웹사이트의 모든 자산을 재정의하고 Javascript 또는 
 
 ---
 
-## Why Use Overrides: 재저의를 사용하는 이유
+## Why Use Overrides재정의를 사용하는 이유
 
 웹사이트를 디버깅할 때 많은 사람들이 페이지 패널의 소스 패널에서 편집하여 무언가를 빠르게 테스트한다. 이는 경우에 따라 도움이 될 수 있지만 변경사항은 영구적이지 않다.
 
@@ -27,7 +27,7 @@ Overrides는 프로덕션에서만 발생하는 웹사이트 또는 크롬 확�
 ## How to Use Overrides재정의를 사용하는 방법
 To use Overrides, open the Devtools either from the settings or using the keyboard shortcut `CTRL + SHIFT + I` or `F12`.
 
-Overrides를 사용하려면 설정에서 또는 키보드 단축키를 사용하여 Devtools를 연다.
+Overrides를 사용하려면 설정 또는 키보드 단축키를 사용하여 Devtools를 연다.
 
 Then, Click on the **Sources** tab. You'11 see at the top of the left menu 3 tabs: **Page, Filesystem**, and **Overrides**.
 
