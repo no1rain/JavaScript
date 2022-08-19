@@ -42,7 +42,7 @@ Once you select a folder, a prompt will show up at the top of the page. Click **
 
 ![Allow](../image/devtools-3.jpg)
 
-![허용](../image/devtools-33.png)
+![허용](../image/allow-kor.png)
 
 
 When you do, you are ready to use overrides on this website. You can go back to the devtools **Sources** tab, then click on **Page**.
@@ -51,7 +51,9 @@ Choose a file like a JavaScript or CSS files, right click it and choose **"Save 
 Then file you choose will now appear in the Overrides tab.
 
 
-![Allow](../image/devtools-5.png)
+![Allow](../image/add-overrides.png)
+
+![Overrides](../image/overrides.png)
 
 
 Now, any changes you make to the file will persist throughout page feloads and navigating pages in the website as long as the devtools in running.
