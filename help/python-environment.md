@@ -140,7 +140,7 @@ Can't find Python Path? It should be here **(in most cases)**.
 # For python3
 /Library/Frameworks/Python.framework/Versions/3.10/bin/python3
 ```
-Then Press **control + x** to exit, and press **y** for saving. and Then Press ``**endter`` to return to the terminal window Then You have To Source it using the following command in a terminal, run
+Then Press **control + x** to exit, and press **y** for saving. and Then Press '**enter**' to return to the terminal window Then You have To Source it using the following command in a terminal, run
 ```sh
 source ~/.bash_profile
 ```

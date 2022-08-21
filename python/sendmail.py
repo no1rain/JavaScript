@@ -1,4 +1,4 @@
-import stmplib, ssl
+import smtplib, ssl
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
@@ -49,7 +49,7 @@ message.attach(part2)
 
 # Create secure connection with server and send email
 context = ssl.create_default_context()
-with stmplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
+with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
 
     # Authentication
     server.login(sender_email, password)
