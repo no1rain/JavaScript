@@ -37,4 +37,6 @@ cursorObj.execute("SELECT * FROM user")
 rowList = cursorObj.fetchall()
 for row in rowList:
     print(row)
+
+dbConnection.close()
 ```
