@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>counter-increment</title>
+
+    <style>
+
+        body{font-size:1.5em; counter-reset:title;}/*h1의 상위요소인 body에서 title의 번호 초기화*/
+        h1{font-size:1.5em; counter-increment:title;}/*h1태그의 counter-increment명을 'title'이라고 명명*/
+        h1:before{content:counter(title)"."; padding-right:5px; color:orange}/*쌍따옴표 " "안에 문자를 입력하면 "1."와같이 출력한다.*/
+        ul{list-style:none; margin:0; padding:0; counter-reset:list-number;} /*list-number의 번호 초기화*/
+        ul li{counter-increment:list-number; line-height:2} /*li선택자의 counter-increment명을 'list-number'라고 명명*/
+        ul li:before{content:"("counter(list-number)")"; /*list-number를 count하여 가상선택자before의 content로 담아준다.*/
+            display:inline-block; text-align:center; line-height:1.2;  width:30px; height:30px; border-radius:50%;} 
+        ol.alpha li{list-style:upper-alpha; line-height:2} /*li선택자의 counter-increment명을 'list-number'라고 명명*/
+        ol.alpha li:before{ /*list-number를 count하여 가상선택자before의 content로 담아준다.*/
+            display:inline-block; text-align:center; line-height:1.2;  width:30px; height:30px; border-radius:50%;} 
+        ol.hangul li{list-style-type:hangul; line-height:2} /*li선택자의 counter-increment명을 'list-number'라고 명명*/
+        ol.hangul li:before{ /*list-number를 count하여 가상선택자before의 content로 담아준다.*/
+            display:inline-block; text-align:center; line-height:1.2;  width:30px; height:30px; border-radius:50%;} 
+    </style>
+</head>
+
+<body>
+    <h1>커피</h1>
+    <ul>
+        <li>아메리카노</li>
+        <li>카페라테</li>
+        <li>카푸치노</li>
+        <ol class="alpha">
+            <li>개천절</li>
+            <li>한글날</li>
+        </ol>
+    </ul>
+    <h1>주스</h1>
+    <ul>
+        <li>딸기주스</li>
+        <li>오렌지주스</li>
+        <li>포도주스</li>
+        <ol class="hangul">
+            <li>개천절</li>
+            <li>한글날</li>
+        </ol>
+    </ul>
+</body>
+</html>

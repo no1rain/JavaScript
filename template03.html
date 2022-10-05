@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>counter-increment</title>
+
+    <style>
+
+        body{font-size:1.5em;}
+
+        ul{list-style:none; margin:0; padding:0; counter-reset:list-number;}   /*list-number의 번호 초기화*/
+
+        ul li{counter-increment:list-number;}   /*li선택자의 counter-increment명을 'list-number'라고 명명*/
+
+        ul li:before{content:counter(list-number);}   /*list-number를 count하여 가상선택자before의 content로 담아준다.*/
+
+    </style>
+</head>
+
+<body>
+    <h1>커피</h1>
+    <ul>
+        <li>아메리카노</li>
+        <li>카페라테</li>
+        <li>카푸치노</li>
+    </ul>
+</body>
+</html>
