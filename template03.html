@@ -12,9 +12,11 @@
 
         body{font-size:1.5em;}
 
+        /* ul, ol, li{list-style: none;} */
+
         ul{list-style:none; margin:0; padding:0; counter-reset:list-number;}   /*list-number의 번호 초기화*/
 
-        ul li{counter-increment:list-number;}   /*li선택자의 counter-increment명을 'list-number'라고 명명*/
+        ul li{counter-increment:list-number; margin-left: 20px;}   /*li선택자의 counter-increment명을 'list-number'라고 명명*/
 
         ul li:before{content:counter(list-number);}   /*list-number를 count하여 가상선택자before의 content로 담아준다.*/
 

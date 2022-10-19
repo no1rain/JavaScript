@@ -20,9 +20,9 @@
 
         ul li{counter-increment:list-number; line-height:2} /*li선택자의 counter-increment명을 'list-number'라고 명명*/
 
-        ul li:before{content:counter(title)"("counter(list-number)")";/*h1의 'title'과 문자"-" li의 'list-number'를 연결*/
-
-            display:inline-block; text-align:center; line-height:1.2;  width:60px; height:30px; border-radius:50%; color:#fff; margin-right:10px; background:brown;} 
+        /*ul li:before{content:counter(title)"("counter(list-number)")";/*h1의 'title'과 문자"-" li의 'list-number'를 연결*/
+        ul li:before{content: counter(list-number);/*h1의 'title'과 문자"-" li의 'list-number'를 연결*/
+            display:inline-block; text-align:center; line-height:1.2;  width:60px; height:30px; border-radius:50%; margin-right:10px;} 
 
     </style>
 </head>
